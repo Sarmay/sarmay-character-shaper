@@ -1,0 +1,35 @@
+const kzMap = {
+  ا: { 3: '\uFE8E', 4: '\uFE8D' },
+  ب: { 1: '\uFE91', 2: '\uFE92', 3: '\uFE90', 4: '\uFE8F' },
+  ۆ: { 3: '\uFBDA', 4: '\uFBD9' },
+  گ: { 1: '\uFB94', 2: '\uFB95', 3: '\uFB93', 4: '\uFB92' },
+  ع: { 1: '\uFECB', 2: '\uFECC', 3: '\uFECA', 4: '\uFEC9' },
+  د: { 3: '\uFEAA', 4: '\uFEA9' },
+  ە: { 3: '\uFEEA', 4: '\uFEE9' },
+  ج: { 1: '\uFE9F', 2: '\uFEA0', 3: '\uFE9E', 4: '\uFE9D' },
+  ز: { 3: '\uFEB0', 4: '\uFEAF' },
+  ي: { 1: '\uFEF3', 2: '\uFEF4', 3: '\uFEF2', 4: '\uFEF1' },
+  ك: { 1: '\uFEDB', 2: '\uFEDC', 3: '\uFEDA', 4: '\uFED9' },
+  ق: { 1: '\uFED7', 2: '\uFED8', 3: '\uFED6', 4: '\uFED5' },
+  ل: { 1: '\uFEDF', 2: '\uFEE0', 3: '\uFEDE', 4: '\uFEDD' },
+  م: { 1: '\uFEE3', 2: '\uFEE4', 3: '\uFEE2', 4: '\uFEE1' },
+  ن: { 1: '\uFEE7', 2: '\uFEE8', 3: '\uFEE6', 4: '\uFEE5' },
+  ڭ: { 1: '\uFBD5', 2: '\uFBD6', 3: '\uFBD4', 4: '\uFBD3' },
+  و: { 3: '\uFEEE', 4: '\uFEED' },
+  پ: { 1: '\uFB58', 2: '\uFB59', 3: '\uFB57', 4: '\uFB56' },
+  ر: { 3: '\uFEAE', 4: '\uFEAD' },
+  س: { 1: '\uFEB3', 2: '\uFEB4', 3: '\uFEB2', 4: '\uFEB1' },
+  ت: { 1: '\uFE97', 2: '\uFE98', 3: '\uFE96', 4: '\uFE95' },
+  ۋ: { 3: '\uFBDF', 4: '\uFBDE' },
+  ۇ: { 3: '\uFBD8', 4: '\uFBD7' },
+  ف: { 1: '\uFED3', 2: '\uFED4', 3: '\uFED2', 4: '\uFED1' },
+  ح: { 1: '\uFEA3', 2: '\uFEA4', 3: '\uFEA2', 4: '\uFEA1' },
+  چ: { 1: '\uFB7C', 2: '\uFB7D', 3: '\uFB7B', 4: '\uFB7A' },
+  ش: { 1: '\uFEB7', 2: '\uFEB8', 3: '\uFEB6', 4: '\uFEB5' },
+  ى: { 1: '\uFBE8', 2: '\uFBE9', 3: '\uFEF0', 4: '\uFEEF' },
+  ء: { 4: '\uFE80' },
+  ھ: { 1: '\uFBAC' }
+}
+module.exports = {
+  kzMap
+}

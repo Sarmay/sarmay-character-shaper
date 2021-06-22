@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for character-shaper/dist/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">character-shaper/dist/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.31% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>96/104</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">81.08% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>60/74</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.71% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>89/96</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">584×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">182×</span>
+<span class="cline-any cline-yes">180×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">172×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">174×</span>
+<span class="cline-any cline-yes">30×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">144×</span>
+<span class="cline-any cline-yes">22×</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">122×</span>
+<span class="cline-any cline-yes">64×</span>
+<span class="cline-any cline-yes">38×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">58×</span>
+<span class="cline-any cline-yes">31×</span>
+<span class="cline-any cline-yes">27×</span>
+<span class="cline-any cline-yes">27×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">183×</span>
+<span class="cline-any cline-yes">183×</span>
+<span class="cline-any cline-yes">182×</span>
+<span class="cline-any cline-yes">182×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">174×</span>
+<span class="cline-any cline-yes">174×</span>
+<span class="cline-any cline-yes">174×</span>
+<span class="cline-any cline-yes">174×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">(function webpackUniversalModuleDefinition(root, factory) {
+	<span class="missing-if-branch" title="else path not taken" >E</span>if(typeof exports === 'object' &amp;&amp; typeof module === 'object')
+		module.exports = factory();
+	else <span class="cstat-no" title="statement not covered" >if(typeof define === 'function' &amp;&amp; define.amd)</span>
+<span class="cstat-no" title="statement not covered" >		define([], factory);</span>
+	else <span class="cstat-no" title="statement not covered" >if(typeof exports === 'object')</span>
+<span class="cstat-no" title="statement not covered" >		exports["sarmayCharacterShaper"] = factory();</span>
+	else
+<span class="cstat-no" title="statement not covered" >		root["sarmayCharacterShaper"] = factory();</span>
+})(this, function() {
+return /******/ (() =&gt; { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ([
+/* 0 */,
+/* 1 */
+/***/ ((module) =&gt; {
+&nbsp;
+const kzMap = {
+  ا: { 3: '\uFE8E', 4: '\uFE8D' },
+  ب: { 1: '\uFE91', 2: '\uFE92', 3: '\uFE90', 4: '\uFE8F' },
+  ۆ: { 3: '\uFBDA', 4: '\uFBD9' },
+  گ: { 1: '\uFB94', 2: '\uFB95', 3: '\uFB93', 4: '\uFB92' },
+  ع: { 1: '\uFECB', 2: '\uFECC', 3: '\uFECA', 4: '\uFEC9' },
+  د: { 3: '\uFEAA', 4: '\uFEA9' },
+  ە: { 3: '\uFEEA', 4: '\uFEE9' },
+  ج: { 1: '\uFE9F', 2: '\uFEA0', 3: '\uFE9E', 4: '\uFE9D' },
+  ز: { 3: '\uFEB0', 4: '\uFEAF' },
+  ي: { 1: '\uFEF3', 2: '\uFEF4', 3: '\uFEF2', 4: '\uFEF1' },
+  ك: { 1: '\uFEDB', 2: '\uFEDC', 3: '\uFEDA', 4: '\uFED9' },
+  ق: { 1: '\uFED7', 2: '\uFED8', 3: '\uFED6', 4: '\uFED5' },
+  ل: { 1: '\uFEDF', 2: '\uFEE0', 3: '\uFEDE', 4: '\uFEDD' },
+  م: { 1: '\uFEE3', 2: '\uFEE4', 3: '\uFEE2', 4: '\uFEE1' },
+  ن: { 1: '\uFEE7', 2: '\uFEE8', 3: '\uFEE6', 4: '\uFEE5' },
+  ڭ: { 1: '\uFBD5', 2: '\uFBD6', 3: '\uFBD4', 4: '\uFBD3' },
+  و: { 3: '\uFEEE', 4: '\uFEED' },
+  پ: { 1: '\uFB58', 2: '\uFB59', 3: '\uFB57', 4: '\uFB56' },
+  ر: { 3: '\uFEAE', 4: '\uFEAD' },
+  س: { 1: '\uFEB3', 2: '\uFEB4', 3: '\uFEB2', 4: '\uFEB1' },
+  ت: { 1: '\uFE97', 2: '\uFE98', 3: '\uFE96', 4: '\uFE95' },
+  ۋ: { 3: '\uFBDF', 4: '\uFBDE' },
+  ۇ: { 3: '\uFBD8', 4: '\uFBD7' },
+  ف: { 1: '\uFED3', 2: '\uFED4', 3: '\uFED2', 4: '\uFED1' },
+  ح: { 1: '\uFEA3', 2: '\uFEA4', 3: '\uFEA2', 4: '\uFEA1' },
+  چ: { 1: '\uFB7C', 2: '\uFB7D', 3: '\uFB7B', 4: '\uFB7A' },
+  ش: { 1: '\uFEB7', 2: '\uFEB8', 3: '\uFEB6', 4: '\uFEB5' },
+  ى: { 1: '\uFBE8', 2: '\uFBE9', 3: '\uFEF0', 4: '\uFEEF' },
+  ء: { 4: '\uFE80' },
+  ھ: { 1: '\uFBAC' }
+}
+module.exports = {
+  kzMap
+}
+&nbsp;
+&nbsp;
+/***/ })
+/******/ 	]);
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		<span class="missing-if-branch" title="if path not taken" >I</span>if (cachedModule !== undefined) {
+/******/ 			<span class="cstat-no" title="statement not covered" >return cachedModule.exports;</span>
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() =&gt; {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) =&gt; {
+/******/ 			for(var key in definition) {
+/******/ 				<span class="missing-if-branch" title="else path not taken" >E</span>if(__webpack_require__.o(definition, key) &amp;&amp; !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() =&gt; {
+/******/ 		__webpack_require__.o = (obj, prop) =&gt; (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() =&gt; {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) =&gt; {
+/******/ 			<span class="missing-if-branch" title="else path not taken" >E</span>if(typeof Symbol !== 'undefined' &amp;&amp; Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() =&gt; {
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () =&gt; (/* binding */ shaper)
+/* harmony export */ });
+const { kzMap } = __webpack_require__(1)
+&nbsp;
+const hasKey = (obj, key) =&gt; {
+  return Object.prototype.hasOwnProperty.call(obj, key)
+}
+&nbsp;
+const getHyphenateIndex = (prevEnd, prev, current) =&gt; {
+  if (!prev || !current) return -1
+  if (prev === '\u0644' &amp;&amp; current === '\u0627') {
+    if (prevEnd) {
+      return 0
+    } else {
+      return 1
+    }
+  }
+  return -1
+}
+&nbsp;
+const getCharIndex = (prevEnd, prev, current) =&gt; {
+  if (!prev || !hasKey(kzMap, prev)) {
+    return 0
+  }
+  if (!current || !hasKey(kzMap, current)) {
+    if (hasKey(kzMap[prev], '3') &amp;&amp; !prevEnd) {
+      return 3
+    } else {
+      return 4
+    }
+  }
+  if (prevEnd) {
+    if (hasKey(kzMap[prev], '1') &amp;&amp; (hasKey(kzMap[current], '2') || hasKey(kzMap[current], '3'))) {
+      return 1
+    } else {
+      return 4
+    }
+  } else {
+    if (hasKey(kzMap[prev], '2') &amp;&amp; ((hasKey(kzMap[current], '2') || hasKey(kzMap[current], '3')))) {
+      return 2
+    } else <span class="missing-if-branch" title="else path not taken" >E</span>if (hasKey(kzMap[prev], '3')) {
+      return 3
+    }
+  }
+}
+&nbsp;
+function shaper (string) {
+  <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof string !== 'string') <span class="cstat-no" title="statement not covered" >return string</span>
+  let index = 0
+  const length = string.length
+  let prev = string.charAt(index++)
+  let prevEnd = true
+  let result = ''
+  let charIndex = null
+  const jointCharArray = ['\uFEFB', '\uFEFC']
+  for (; index &lt;= length; index++) {
+    const current = index !== length ? string.charAt(index) : undefined
+    if (prev === '\u06BE') { result += '\uFBAC'; prev = current; prevEnd = false; continue }
+    const jointCharIndex = getHyphenateIndex(prevEnd, prev, current)
+    if (jointCharIndex !== -1) {
+      result += jointCharArray[jointCharIndex]
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (index === length - 1) {
+<span class="cstat-no" title="statement not covered" >        break</span>
+      } else {
+        prevEnd = true
+        prev = string.charAt(++index)
+        continue
+      }
+    }
+    charIndex = getCharIndex(prevEnd, prev, current)
+    result += (charIndex === 0 ? prev : kzMap[prev][charIndex])
+    prevEnd = (!((charIndex === 1 || charIndex === 2)))
+    prev = current
+  }
+  const rowResult = result.split('\n').filter(z =&gt; z.trim())
+  let encodeString = ''
+  rowResult.forEach((ele, i) =&gt; {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (ele.trim()) {
+      const enter = i &lt; rowResult.length - 1 ? '\n' : ''
+      encodeString += ele.split('').reverse().join('') + enter
+    }
+  })
+  return encodeString
+}
+&nbsp;
+})();
+&nbsp;
+__webpack_exports__ = __webpack_exports__.default;
+/******/ 	return __webpack_exports__;
+/******/ })()
+;
+});</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 22 2021 18:37:36 GMT+0800 (中国标准时间)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
