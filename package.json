@@ -9,7 +9,7 @@
     "lint": "eslint --fix src",
     "test": "npm run build && mocha -t 5000",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha",
-    "coveralls": "npm run cover --report lcovonly && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "npm run cover --report && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
